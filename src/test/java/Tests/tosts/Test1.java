@@ -11,7 +11,10 @@ public class Test1 extends BaseTest {
     @Link(name = "Buttons",url="https://demoqa.com/buttons")
     @DisplayName("Тест кнопок")
     public void testButtons(){
-
+        step1();
+        step2();
+        step3();
+        step4();
     }
     @Step("Перезод на страницу \"Buttons\"")
     public void step1(){

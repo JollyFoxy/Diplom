@@ -18,7 +18,7 @@ public class BaseTest implements IAll{
     }
     @BeforeEach
     public void before() {
-        open("");
+        open("https://demoqa.com/");
         WebDriverRunner.getWebDriver().manage().window().setSize(new Dimension(1920,1080));
     }
 }
