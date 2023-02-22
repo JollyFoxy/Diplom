@@ -6,7 +6,7 @@ import io.qameta.allure.Link;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Test;
 
-public class Tost1  extends BaseTest {
+public class Test1 extends BaseTest {
     @Test
     @Link(name = "Buttons",url="https://demoqa.com/buttons")
     @DisplayName("Тест кнопок")
