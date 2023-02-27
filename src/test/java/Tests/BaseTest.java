@@ -15,6 +15,7 @@ public class BaseTest implements IAll{
     static void beforeConfig() {
         Configuration.browser= WebDriver.class.getName();
         Configuration.timeout = 10000;
+//        Configuration.remote = "http://localhost:4444";
     }
     @BeforeEach
     public void before() {
