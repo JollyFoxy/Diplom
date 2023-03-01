@@ -1,8 +1,8 @@
 package Pages;
 
-import Tools.Elements.Button;
-import Tools.Elements.P;
-import Tools.Elements.Transition;
+import Elements.Button;
+import Elements.P;
+import Elements.Transition;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 

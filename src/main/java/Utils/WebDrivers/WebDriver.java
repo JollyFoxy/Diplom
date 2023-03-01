@@ -1,11 +1,10 @@
-package Tools.WebDrivers;
+package Utils.WebDrivers;
 
 import com.codeborne.selenide.WebDriverProvider;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 import javax.annotation.Nonnull;
 import java.io.File;
@@ -31,7 +30,8 @@ public class WebDriver implements WebDriverProvider {
         prefs.put("download.default_directory", new File(".").getAbsolutePath() + "data");
         options.setExperimentalOption("prefs", prefs);
 
-        WebDriverManager.chromedriver().version("108.0.5359.71").setup();
+        WebDriverManager.chromedriver().version("110.0.5481.77").setup();
+//        108.0.5359.71
         driver = new ChromeDriver(options);
         return driver;
     }
