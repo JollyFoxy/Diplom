@@ -2,6 +2,7 @@ package Tests;
 
 import Interfasces.IAll;
 import Utils.TestConf;
+import Utils.WebDrivers.WebDriver;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import org.aeonbits.owner.ConfigFactory;
@@ -19,21 +20,23 @@ public class BaseTest implements IAll{
 
     @BeforeAll
     static void beforeConfig() {
-        //Url удалённого веб драйвера
-        Configuration.remote = testConfig.remoteURL();
-        //Определяем какой браузер будем использовать
-        Configuration.browser = "chrome";/*WebDriver.class.getName();*/
-        //Размер окна браузера
-        Configuration.browserSize = "1920x1080";
-        //Создаём объект класса DesiredCapabilities, используется как настройка  вашей конфигурации с помощью пары ключ-значение
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("",true);
-        //Включить поддержку отображения экрана браузера во время выполнения теста
-        capabilities.setCapability("enableVNC", true);
-        //Включение записи видео в процессе выполнения тестов
-        capabilities.setCapability("enableVideo",  true);
-        //Переопределяем Browser capabilities
-        Configuration.browserCapabilities = capabilities;
+//        //Url удалённого веб драйвера
+//        Configuration.remote = testConfig.remoteURL();
+//        //Определяем какой браузер будем использовать
+//        Configuration.browser = "chrome";/*WebDriver.class.getName();*/
+//        //Размер окна браузера
+//        Configuration.browserSize = "1920x1080";
+//        //Создаём объект класса DesiredCapabilities, используется как настройка  вашей конфигурации с помощью пары ключ-значение
+//        DesiredCapabilities capabilities = new DesiredCapabilities();
+//        capabilities.setCapability("",true);
+//        //Включить поддержку отображения экрана браузера во время выполнения теста
+//        capabilities.setCapability("enableVNC", true);
+//        //Включение записи видео в процессе выполнения тестов
+//        capabilities.setCapability("enableVideo",  true);
+//        //Переопределяем Browser capabilities
+//        Configuration.browserCapabilities = capabilities;
+        Configuration.browser = WebDriver.class.getName();
+
         //Устанавливаем ожидание
         Configuration.timeout = 10000;
     }
