@@ -1,9 +1,9 @@
 package Tests.tosts;
 
 import Tests.BaseTest;
-import org.junit.jupiter.api.DisplayName;
 import io.qameta.allure.Link;
 import io.qameta.allure.Step;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class Test1 extends BaseTest {
