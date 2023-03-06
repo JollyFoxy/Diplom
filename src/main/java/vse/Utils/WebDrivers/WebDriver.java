@@ -1,4 +1,4 @@
-package Utils.WebDrivers;
+package vse.Utils.WebDrivers;
 
 import com.codeborne.selenide.WebDriverProvider;
 import io.github.bonigarcia.wdm.WebDriverManager;

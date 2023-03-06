@@ -1,4 +1,4 @@
-package Persons;
+package vse.Persons;
 
 public interface IPerson {
     Person person =new Person("Павел","Мизирев",

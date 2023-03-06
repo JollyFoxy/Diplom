@@ -1,4 +1,4 @@
-package Persons;
+package vse.Persons;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

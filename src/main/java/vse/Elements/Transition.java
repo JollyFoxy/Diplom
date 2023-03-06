@@ -1,4 +1,4 @@
-package Elements;
+package vse.Elements;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;

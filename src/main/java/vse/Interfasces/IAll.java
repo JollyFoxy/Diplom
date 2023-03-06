@@ -1,6 +1,6 @@
-package Interfasces;
+package vse.Interfasces;
 
-import Pages.Buttons;
+import vse.Pages.Buttons;
 
 public interface IAll {
     Buttons buttons = new Buttons();

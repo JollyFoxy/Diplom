@@ -1,4 +1,4 @@
-package Elements;
+package vse.Elements;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
